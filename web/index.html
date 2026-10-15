@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>The Enchanted Mirror</title><link rel="stylesheet" href="/style.css"></head>
+<body><main><p class="eyebrow">THE BESHARA ENCHANTED MIRROR</p>
+<div id="mirror" data-state="idle" aria-hidden="true"><div class="mist"></div>
+<svg viewBox="0 0 400 520"><defs><radialGradient id="skin"><stop stop-color="#dae9ee" stop-opacity=".75"/><stop offset="1" stop-color="#406572" stop-opacity=".15"/></radialGradient></defs>
+<path fill="url(#skin)" stroke="#bbd5da" stroke-opacity=".45" d="M200 65 C65 55 90 230 110 300 Q120 380 200 440 Q280 380 290 300 C310 230 335 55 200 65Z"/>
+<g class="eyes" fill="#d7ffff"><path d="M125 208 Q150 189 177 213 Q150 226 125 208"/><path d="M223 213 Q250 189 275 208 Q250 226 223 213"/></g>
+<path d="M200 218 L181 294 Q200 306 219 294" fill="none" stroke="#a5c5cd" stroke-width="3"/>
+<ellipse id="mouth" cx="200" cy="350" rx="36" ry="4" fill="#101923" stroke="#c1dce1" stroke-width="2"/>
+<path d="M128 185 Q150 172 177 189 M223 189 Q250 172 272 185" stroke="#c6dbe1" fill="none" stroke-width="4"/></svg></div>
+<h1>Ask, and the mirror shall answer.</h1><p id="status" role="status">Awaiting your question</p><p id="answer" aria-live="polite"></p>
+<form id="form"><label class="sr" for="question">Your question</label><input id="question" maxlength="4000" placeholder="Mirror, mirror…" required autocomplete="off"><button id="ask">Ask the mirror</button></form>
+<div class="actions"><button id="listen" type="button">🎙 Speak</button><button id="reset" type="button">New conversation</button><button id="full" type="button">Fullscreen</button></div>
+<p class="hint">Voice input depends on your browser and may use an online recognition service. Typing always works.</p></main><script src="/app.js"></script></body></html>
